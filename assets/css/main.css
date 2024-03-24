@@ -726,8 +726,14 @@ input, select, textarea {
 		position: absolute;
 		text-align: center;
 		width: 100%;
+        flex-wrap: wrap;
+    	line-height: 1.5; 
+    	padding: 20px; 
 	}
 
+	#footer span {
+        margin-right: 20px; 
+    }
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -808,7 +814,16 @@ input, select, textarea {
 		#bg {
 			background-size: 1500px auto;
 			width: 4500px;
-		} }
+		} 
+	
+		#footer {
+			flex-direction: column;
+			align-items: center;
+		}
+		#footer span {
+			margin-bottom: 10px;
+		}
+	}
 
 /* Normal */
 
@@ -890,7 +905,14 @@ input, select, textarea {
 		#bg {
 			background-size: 750px auto;
 			width: 2250px;
-		} }
+		} 
+		#footer {
+			flex-direction: column;
+			align-items: center;
+		}
+		#footer span {
+			margin-bottom: 10px;
+		}}
 
 /* Mobile */
 
@@ -1021,6 +1043,8 @@ input, select, textarea {
 					transform: translate3d(-412.5px,0,0);
 				}
 
+		
+
 	}
 
 		@-webkit-keyframes bg {
@@ -1080,4 +1104,13 @@ input, select, textarea {
 
 		#header nav {
 			padding: 0 1em;
-		} }
+		} 
+	
+		#footer {
+			flex-direction: column;
+			align-items: center;
+		}
+		#footer span {
+			margin-bottom: 10px;
+		}
+	}
